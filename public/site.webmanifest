@@ -4,8 +4,8 @@
   "description": "Leave a review after travelling with Travel Puglia.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f6f3ee",
-  "theme_color": "#1f476d",
+  "background_color": "#F9F9FA",
+  "theme_color": "#2D1A17",
   "icons": [
     {
       "src": "/favicon.svg",

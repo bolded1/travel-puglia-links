@@ -23,7 +23,7 @@ Use these exact URLs (do not substitute):
 - TripAdvisor attraction: https://www.tripadvisor.com/Attraction_Review-g642178-d23733974-Reviews-Travel_Puglia-Ostuni_Province_of_Brindisi_Puglia.html
 - Contact page: https://travelpuglia.com/contact/
 
-Footer phones: Italy +39 320 825 5007 · Australia 1800 836 301.
+Footer: Italy +39 320 825 5007 · Australia 1800 836 301 · [info@travelpuglia.com](mailto:info@travelpuglia.com).
 
 ## Local preview
 
