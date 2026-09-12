@@ -69,7 +69,7 @@ a {
 
 .hero {
   position: relative;
-  height: clamp(9.5rem, 32vw, 15rem);
+  height: clamp(13.5rem, 52vw, 20rem);
   overflow: hidden;
 }
 
@@ -77,7 +77,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 62%;
   display: block;
 }
 
@@ -87,15 +87,16 @@ a {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(45, 26, 23, 0.08) 0%,
-    rgba(249, 249, 250, 0.12) 55%,
+    transparent 0%,
+    transparent 48%,
+    rgba(249, 249, 250, 0.45) 78%,
     var(--offwhite) 100%
   );
 }
 
 .page {
   width: min(100% - 1.5rem, var(--max));
-  margin: -3.25rem auto 0;
+  margin: -2.15rem auto 0;
   padding-bottom: 2.5rem;
 }
 
@@ -118,17 +119,8 @@ a {
   margin: 0.15rem auto 1.05rem;
 }
 
-.kicker {
-  margin: 0 0 0.4rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--steel);
-}
-
 .lede {
-  margin: 0;
+  margin: 0.15rem 0 0;
   font-family: Arapey, Baskervville, "Palatino Linotype", Palatino, serif;
   font-size: clamp(1.75rem, 6.2vw, 2.25rem);
   font-weight: 400;
@@ -359,7 +351,7 @@ a {
 @media (min-width: 720px) {
   .page {
     width: min(100% - 2rem, 28rem);
-    margin-top: -3.6rem;
+    margin-top: -2.4rem;
   }
 
   .sheet {
