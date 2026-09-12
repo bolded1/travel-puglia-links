@@ -211,7 +211,7 @@ a {
 }
 
 .btn-review .btn-icon--ink svg {
-  stroke: #000000;
+  color: #000000;
 }
 
 .btn-copy {
