@@ -1,0 +1,368 @@
+:root {
+  /* Live travelpuglia.com tokens — do not invent terracotta/olive */
+  --espresso: #2D1A17;
+  --ink: #000000;
+  --steel: #336699;
+  --charcoal: #2E2E2E;
+  --body: #686868;
+  --offwhite: #F9F9FA;
+  --white: #FFFFFF;
+  --line: #e4e4e6;
+  --focus: #336699;
+  --shadow: 0 16px 40px rgba(45, 26, 23, 0.1);
+  --shadow-btn: 0 12px 24px rgba(45, 26, 23, 0.22);
+  --radius: 18px;
+  --max: 26.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--body);
+  background-color: var(--offwhite);
+  background-image:
+    linear-gradient(180deg, rgba(249, 249, 250, 0.55) 0%, var(--offwhite) 46%),
+    url("hero-blur.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--steel);
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 20;
+  padding: 0.55rem 0.85rem;
+  background: var(--espresso);
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.hero {
+  position: relative;
+  height: clamp(13.5rem, 52vw, 20rem);
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 62%;
+  display: block;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 48%,
+    rgba(249, 249, 250, 0.45) 78%,
+    var(--offwhite) 100%
+  );
+}
+
+.page {
+  width: min(100% - 1.5rem, var(--max));
+  margin: -2.15rem auto 0;
+  padding-bottom: 2.5rem;
+}
+
+.sheet {
+  position: relative;
+  padding: 1.7rem 1.25rem 1.4rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: min(16.5rem, 86%);
+  margin: 0.15rem auto 1.05rem;
+}
+
+.lede {
+  margin: 0.15rem 0 0;
+  font-family: Arapey, Baskervville, "Palatino Linotype", Palatino, serif;
+  font-size: clamp(1.75rem, 6.2vw, 2.25rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.2;
+  color: var(--charcoal);
+}
+
+.sub {
+  margin: 0.5rem 0 0;
+  font-family: Baskervville, "Palatino Linotype", Palatino, serif;
+  font-size: 1.28rem;
+  font-weight: 400;
+  color: var(--espresso);
+}
+
+.intro {
+  margin: 0.85rem auto 0;
+  max-width: 22rem;
+  color: var(--body);
+  font-size: 0.95rem;
+}
+
+.reviews {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-review {
+  color: var(--white);
+  background: var(--espresso);
+  box-shadow: var(--shadow-btn);
+  min-height: 4.35rem;
+}
+
+.btn-review:hover {
+  background: var(--ink);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+}
+
+.btn-review:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  flex: 0 0 2.65rem;
+  width: 2.65rem;
+  height: 2.65rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.85rem;
+  background: var(--steel);
+  color: var(--white);
+}
+
+.btn-icon svg {
+  width: 1.45rem;
+  height: 1.45rem;
+  display: block;
+}
+
+.btn-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.btn-kicker {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+  font-weight: 500;
+}
+
+.btn-label {
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.btn-chevron {
+  flex: 0 0 auto;
+  opacity: 0.7;
+}
+
+.follow {
+  margin-top: 1.7rem;
+  text-align: center;
+}
+
+.follow-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.9rem;
+  color: var(--body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.follow-title::before,
+.follow-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.btn-social {
+  min-height: 3.15rem;
+  padding: 0.7rem 0.75rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  color: var(--charcoal);
+  box-shadow: 0 4px 12px rgba(45, 26, 23, 0.04);
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+.btn-social:hover {
+  border-color: #cfd6de;
+  background: var(--offwhite);
+  box-shadow: 0 8px 16px rgba(45, 26, 23, 0.07);
+}
+
+.btn-social .btn-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-basis: 2rem;
+  background: #eef3f8;
+  color: var(--steel);
+}
+
+.btn-social .btn-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.site-footer {
+  margin-top: 1.55rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--body);
+  font-size: 0.82rem;
+}
+
+.phones,
+.email {
+  margin: 0 0 0.45rem;
+  line-height: 1.7;
+}
+
+.phones a,
+.email a,
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.phones a:hover,
+.phones a:focus-visible,
+.email a:hover,
+.email a:focus-visible,
+.contact-link:hover,
+.contact-link:focus-visible {
+  color: var(--steel);
+  text-decoration: underline;
+}
+
+.legal {
+  margin: 0.55rem 0 0;
+}
+
+.legal a {
+  color: var(--espresso);
+  font-family: Baskervville, "Palatino Linotype", Palatino, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.legal a:hover,
+.legal a:focus-visible {
+  text-decoration: underline;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+}
+
+@media (min-width: 720px) {
+  .page {
+    width: min(100% - 2rem, 28rem);
+    margin-top: -2.4rem;
+  }
+
+  .sheet {
+    padding: 2rem 1.65rem 1.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn:hover {
+    transition: none;
+    transform: none;
+  }
+}
