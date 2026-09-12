@@ -48,11 +48,16 @@ npx netlify deploy --prod --dir=public
 
 Git-connected sites will publish `public/` on push. After the first production URL is known, consider making `og:image` and `twitter:image` in `public/index.html` absolute (`https://your-domain/og.jpg`) so social crawlers resolve the 1200×630 card image reliably.
 
+## Brand (from travelpuglia.com)
+
+- Colour: espresso `#2D1A17`, black `#000000`, steel blue `#336699`, backgrounds `#F9F9FA` / `#FFFFFF`, body `#686868`, headings `#2E2E2E`
+- Type: Baskervville (headings), Arapey italic (quote-style lede), Roboto (body) via Google Fonts
+- Do not use terracotta `#855C5C` or olive — not visible on the live site
+
 ## Assets
 
 | File | Role |
 | --- | --- |
-| `public/logo.png` | Official wordmark from travelpuglia.com |
-| `public/og.jpg` | 1200×630 Open Graph crop of the Puglia hero |
-| `public/hero.jpg` | Compressed header photo |
+| `public/logo.png` | Official 1187×192 wordmark |
+| `public/og.jpg` | 1200×630 Puglia door crop (Open Graph + page hero) |
 | `public/favicon.svg` | Brand-dot favicon derived from the logo |

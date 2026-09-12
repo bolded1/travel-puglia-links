@@ -1,12 +1,12 @@
 :root {
-  --espresso: #2d1a17;
+  /* Live travelpuglia.com tokens — do not invent terracotta/olive */
+  --espresso: #2D1A17;
   --ink: #000000;
   --steel: #336699;
-  --steel-deep: #2a557f;
-  --charcoal: #2e2e2e;
+  --charcoal: #2E2E2E;
   --body: #686868;
-  --offwhite: #f9f9fa;
-  --white: #ffffff;
+  --offwhite: #F9F9FA;
+  --white: #FFFFFF;
   --line: #e4e4e6;
   --focus: #336699;
   --shadow: 0 16px 40px rgba(45, 26, 23, 0.1);
